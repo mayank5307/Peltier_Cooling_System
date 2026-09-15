@@ -36,18 +36,18 @@ The device embeds a web interface directly hosted on the ESP32, allowing users t
 
 | Component / Function | Microcontroller Connection | Description |
 | :--- | :--- | :--- |
-| **OLED SDA** | I2C SDA Pin | Data Line for OLED Screen[cite: 3, 5] |
-| **OLED SCL** | I2C SCL Pin | Clock Line for OLED Screen[cite: 3, 5] |
-| **Driver RPWM** | GPIO 26 | Forward PWM signal to BTS7960 Driver[cite: 5] |
-| **Driver LPWM** | GPIO 27 | Reverse PWM signal to BTS7960 Driver[cite: 5] |
-| **Driver R_EN / L_EN** | GPIO 33 / GPIO 32 | Enable lines for BTS7960 Driver[cite: 5] |
-| **Temperature Sensor** | GPIO 4 | OneWire / Analog Input Signal[cite: 5] |
-| **Alert Buzzer** | GPIO 2 | Output trigger for cycle completion sound[cite: 5] |
+| **OLED SDA** | I2C SDA Pin | Data Line for OLED Screen |
+| **OLED SCL** | I2C SCL Pin | Clock Line for OLED Screen |
+| **Driver RPWM** | GPIO 26 | Forward PWM signal to BTS7960 Driver |
+| **Driver LPWM** | GPIO 27 | Reverse PWM signal to BTS7960 Driver |
+| **Driver R_EN / L_EN** | GPIO 33 / GPIO 32 | Enable lines for BTS7960 Driver |
+| **Temperature Sensor** | GPIO 4 | OneWire / Analog Input Signal |
+| **Alert Buzzer** | GPIO 2 | Output trigger for cycle completion sound |
 
 ---
 
 ## Software Stack & Dependencies
 
 * **Platform:** Arduino Framework / ESP-IDF (ESP32 Board Package)
-* **Core Libraries:** `WiFi`, `WebServer`, `PID_v1`, `Wire`, `Adafruit_GFX`, `Adafruit_SSD1306`, `OneWire`, `DallasTemperature`[cite: 5]
-* **Frontend:** Embedded HTML5 / CSS3 web UI served natively over HTTP[cite: 3, 5]
+* **Core Libraries:** `WiFi`, `WebServer`, `PID_v1`, `Wire`, `Adafruit_GFX`, `Adafruit_SSD1306`, `OneWire`, `DallasTemperature`
+* **Frontend:** Embedded HTML5 / CSS3 web UI served natively over HTTP
